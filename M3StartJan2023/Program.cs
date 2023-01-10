@@ -1,12 +1,25 @@
-﻿using System.Collections;
-
-namespace M3StartJan2023
+﻿namespace M3StartJan2023
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            //Console.Write("Hva heter du? ");
+            //var name = Console.ReadLine();
+
+            //Console.Write("I hvilket år ble du født? ");
+            //var yearStr = Console.ReadLine();
+            //var year = Convert.ToInt32(yearStr);
+
+            var name = MyConsole.Ask("Hva heter du? ");
+            var year = MyConsole.AskForInt("I hvilket år ble du født? ");
+
+            var age = 2023 - year;
+            Console.WriteLine($"Hei, {name}!");
+            Console.WriteLine($"Du er {age} år gammel.");
         }
+
+        
 
         //static void Main(string[] args)  //  function Main(args)
         //{
