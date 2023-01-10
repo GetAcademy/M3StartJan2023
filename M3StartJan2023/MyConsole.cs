@@ -1,4 +1,4 @@
-﻿namespace OtherNamespace
+﻿namespace M3StartJan2023
 {
     internal class MyConsole
     {
